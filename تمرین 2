@@ -1,0 +1,15 @@
+numbers = [3, 7, 2, 10, 5, 8, 4, 1, 6, 9]
+min_num = numbers[0]
+for num in numbers:
+    if num < min_num:
+        min_num = num
+max_num = numbers[0]  
+for num in numbers:
+    if num > max_num:
+        max_num = num
+        
+print("min:", min_num)    
+print("max:", max_num)
+
+numbers.sort()
+print("from small to larg:", numbers)

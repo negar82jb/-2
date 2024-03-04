@@ -1,0 +1,15 @@
+import random
+import math
+
+random_numbers = [random.randint(1, 100) for _ in range(10)]
+
+mean = sum(random_numbers) /len(random_numbers)
+
+variance = sum((x - mean) ** 2 for x in random_numbers) / len(random_numbers)
+
+std_deviation = math.sqrt(variance)
+
+print("Random number:", random_numbers)
+print("Mean:", mean)
+print("Variance:", variance)
+print("Std deviation:", std_deviation)
